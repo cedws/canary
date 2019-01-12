@@ -1,0 +1,10 @@
+pre {
+	padding: 15px;
+	font-family: 'Ubuntu Mono', 'Menlo', monospace;
+	white-space: pre-wrap;
+	max-width: 100%;
+}
+
+.highlight > pre {
+	word-wrap: normal;
+}
