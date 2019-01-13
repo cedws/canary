@@ -8,8 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- PWA Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content={{ .Site.Title }}>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="apple-touch-icon" href={{ .Site.Params.avatar }}>
+    <link rel="apple-touch-startup-image" href={{ .Site.Params.avatar }}>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/pygments.css">
 </head>
