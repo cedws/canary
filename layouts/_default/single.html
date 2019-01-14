@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    {{ partial "head.html" . }}
+    {{ partialCached "head.html" . }}
     <body>
         <div class="container">
-            {{ partial "header.html" . }}
+            {{ partialCached "header.html" . }}
             <div class="content">
                 <div class="content__title">
                     <div class="title">{{ .Title | default "Untitled" }}</div>
@@ -11,8 +11,11 @@
                 </div>
                 {{ .Content }}
             </div>
-            <a class="back" href="/">Back to Posts</a>
-            {{ partial "footer.html" . }}
+            <div class="back">
+                {{/* This isn't in the footer because it shouldn't display on every page. */}}
+                <a href="/">Back to Posts</a>
+            </div>
+            {{ partialCached "footer.html" . }}
         </div>
     </body>
 </html>

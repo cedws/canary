@@ -1,7 +1,6 @@
 .highlight > pre {
-    padding: 15px;
+    padding: 10px;
     font-family: 'Ubuntu Mono', 'Menlo', monospace;
     max-width: 100%;
-    word-wrap: normal;
     overflow-x: scroll;
 }

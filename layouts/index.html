@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-    {{ partial "head.html" . }}
+    {{ partialCached "head.html" . }}
     <body>
         <div class="container">
-            {{ partial "header.html" . }}
-            <div class="content_list">
+            {{ partialCached "header.html" . }}
+            <div class="content-list">
                 {{ range .Pages }}
-                <div class="content_list__entry">
-                    <a href={{ .Permalink }}>
+                <div class="content-list__entry">
+                    <a href={{ .RelPermalink }}>
                         <div class="title">{{ .Title | default "Untitled" }}</div>
                     </a>
                     <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
                 </div>
                 {{ end }}
             </div>
-            {{ partial "footer.html" . }}
+            {{ partialCached "footer.html" . }}
         </div>
     </body>
 </html>
