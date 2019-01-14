@@ -15,12 +15,18 @@ theme = "canary"
 title = "Interesting Blog"
 pygmentsStyle = "monokai"
 pygmentsCodeFences = true
+enableRobotsTXT = true
 
 [params]
   author = "John Smith"
-  github = "john-smith"
   avatar = "/img/avatar.png"
+
+[params.links]
+[params.links.github]
+  href = "https://github.com"
+  username = "john-smith"
 
 [permalinks]
 blog = "/post/:title/"
+
 ```
