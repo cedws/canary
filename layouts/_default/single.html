@@ -5,11 +5,11 @@
         <div class="container">
             {{ partialCached "header.html" . }}
             <div class="content">
-                <div class="content__title">
-                    <div class="title">{{ .Title | default "Untitled" }}</div>
-                    <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
-                </div>
-                {{ .Content }}
+            	<div class="content__head">
+	                <div class="title">{{ .Title | default "Untitled" }}</div>
+	                <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+	            </div>
+                <div class="content__body">{{ .Content }}</div>
             </div>
             <div class="back">
                 {{/* This isn't in the footer because it shouldn't display on every page. */}}

@@ -4,14 +4,14 @@
     </div>
     <div class="header__links">
         {{ range $key, $val := .Site.Params.Links }}
-            <a href="{{ .href }}/{{ .username }}" target="noopener noreferrer">
-                <img src="/img/icons/{{ $key }}.svg" width="30" height="30">
-            </a>
+        <a href="{{ .href }}/{{ .username }}" target="noopener noreferrer">
+            <img class="icon" src="/img/icons/{{ $key }}.svg" width="30" height="30">
+        </a>
         {{ end }}
         {{ if .Site.RSSLink }}
-            <a href={{ .Site.RSSLink }} target="noopener noreferrer">
-                <img src="/img/icons/rss.svg" width="30" height="30">
-            </a>
+        <a href={{ .Site.RSSLink }} target="noopener noreferrer">
+            <img class="icon" src="/img/icons/rss.svg" width="30" height="30">
+        </a>
         {{ end }}
     </div>
 </div>

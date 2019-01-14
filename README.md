@@ -3,7 +3,6 @@ A simple and clean theme for Hugo. Currently work-in-progress.
 
 ## Features
 - Built for a mobile-first experience
-- Support for PWA
 - Support for Chroma syntax highlighting
 - No reliance on external CDNs
 - No JavaScript
@@ -17,9 +16,8 @@ pygmentsStyle = "monokai"
 pygmentsCodeFences = true
 enableRobotsTXT = true
 
-[params]
-  author = "John Smith"
-  avatar = "/img/avatar.png"
+[params.seo]
+  description = "A blog about interesting things."
 
 [params.links]
 [params.links.github]
@@ -28,5 +26,4 @@ enableRobotsTXT = true
 
 [permalinks]
 blog = "/post/:title/"
-
 ```
