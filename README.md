@@ -18,6 +18,7 @@ enableRobotsTXT = true
 
 [params.seo]
   description = "A blog about interesting things."
+  index = true
 
 [params.links]
 [params.links.github]
