@@ -3,13 +3,13 @@
 
 name = "Canary"
 license = "GPLv3"
-licenselink = "https://github.com/c-edw/canary/blob/master/LICENSE"
+licenselink = "https://github.com/cedws/canary/blob/master/LICENSE"
 description = "A simple theme inspired by Cocoa."
-homepage = "https://github.com/c-edw/canary"
+homepage = "https://github.com/cedws/canary"
 tags = ["simple", "clean", "modern", "chroma", "blog"]
 features = ["chroma", "blog"]
-min_version = "0.53"
+min_version = "0.59.1"
 
 [author]
-  name = "Connor E."
-  homepage = "https://github.com/c-edw"
+  name = "Connor Edwards"
+  homepage = "https://github.com/cedws"
