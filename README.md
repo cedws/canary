@@ -12,8 +12,6 @@ A simple and clean theme for Hugo. Currently work-in-progress.
 ```
 theme = "canary"
 title = "Interesting Blog"
-pygmentsStyle = "monokai"
-pygmentsCodeFences = true
 enableRobotsTXT = true
 
 [params.seo]
