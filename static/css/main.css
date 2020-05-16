@@ -6,12 +6,9 @@ body {
     font-family: 'Open Sans (WOFF2)', 'Open Sans (WOFF)', 'Open Sans (TTF)', sans-serif;
 }
 
-code {
-    padding: 3px;
-}
-
 p > code {
     background-color: whitesmoke;
+    padding: 3px;
 }
 
 a {
