@@ -7,8 +7,8 @@
             <div class="content-list">
                 {{ range .Pages }}
                 <div class="content-list__entry">
-                    <a href={{ .RelPermalink }}>
-                        <div class="title">{{ .Title | default "Untitled" }}</div>
+                    <a href="{{ .RelPermalink }}">
+                        <div class="title">{{ .Title | default "Untitled" | title }}</div>
                     </a>
                     <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
                 </div>

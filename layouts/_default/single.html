@@ -6,7 +6,7 @@
             {{ partialCached "header.html" . }}
             <div class="content">
                 <div class="content__title">
-                    <div class="title">{{ .Title | default "Untitled" }}</div>
+                    <div class="title">{{ .Title | default "Untitled" | title }}</div>
                     <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
                 </div>
                 {{ .Content }}

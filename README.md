@@ -1,5 +1,5 @@
 # Canary
-A simple and clean theme for Hugo. Currently work-in-progress.
+A simple and clean theme for Hugo.
 
 ## Features
 - Built for a mobile-first experience
@@ -18,13 +18,12 @@ enableRobotsTXT = true
 lang = "en-GB"
 
 [params.seo]
-  description = "A blog about interesting things."
-  index = true
+description = "A blog about interesting things."
+index = true
 
 [params.links]
 [params.links.github]
-  href = "https://github.com"
-  username = "john-smith"
+href = "https://github.com/john-smith"
 
 [permalinks]
 blog = "/post/:title/"
