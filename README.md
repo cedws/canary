@@ -14,6 +14,9 @@ theme = "canary"
 title = "Interesting Blog"
 enableRobotsTXT = true
 
+[params]
+lang = "en-GB"
+
 [params.seo]
   description = "A blog about interesting things."
   index = true
