@@ -19,6 +19,7 @@ lang = "en-GB"
 
 [params.seo]
 description = "A blog about interesting things."
+tagline = "Blogs are useful!"
 index = true
 
 [params.links]

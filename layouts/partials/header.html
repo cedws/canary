@@ -14,4 +14,9 @@
         </a>
         {{ end }}
     </div>
+    {{ if .Site.Params.Tagline }}
+    <div class="header__tagline">
+        {{ .Site.Params.Tagline }}
+    </div>
+    {{ end }}
 </div>
