@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'Iosevka Web';
+    font-display: swap;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    src: url('/ttf/iosevka-regular.ttf') format('truetype'), url('/woff2/iosevka-regular.woff2') format('woff2');
+}
+
 body {
     display: flex;
     margin: 15px;
     overflow-y: scroll;
     justify-content: center;
-    font-family: 'Open Sans (WOFF2)', 'Open Sans (WOFF)', 'Open Sans (TTF)', sans-serif;
+    font-family: 'Iosevka Web', sans-serif;
 }
 
 p > code {

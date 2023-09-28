@@ -12,36 +12,6 @@
     <meta name="description" content="{{ .Site.Params.SEO.Description }}">
     {{- end }}
 
-    <style>
-        @font-face {
-            font-family: 'Open Sans (WOFF2)';
-            font-display: block;
-            src:
-                url(data:application/octet-stream;base64,
-                    {{- readFile "themes/canary/static/fonts/open-sans-v15-latin-regular.woff2" | base64Encode -}}
-                )
-                format('woff2');
-        }
-
-        @font-face {
-            font-family: 'Open Sans (WOFF)';
-            font-display: block;
-            src:
-                url(data:application/octet-stream;base64,
-                    {{- readFile "themes/canary/static/fonts/open-sans-v15-latin-regular.woff" | base64Encode -}}
-                )
-                format('woff');
-        }
-
-        @font-face {
-            font-family: 'Open Sans (TTF)';
-            font-display: block;
-            src:
-                url(/fonts/open-sans-v15-latin-regular.ttf)
-                format('truetype');
-        }
-    </style>
-
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/chroma.css">
 </head>
