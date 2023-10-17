@@ -11,6 +11,7 @@
                         <div class="title">{{ .Title | default "Untitled" | title }}</div>
                     </a>
                     <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+                    <div class="readingtime">~{{ .ReadingTime }} minute read</div>
                 </div>
                 {{ end }}
             </div>

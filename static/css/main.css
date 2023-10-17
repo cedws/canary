@@ -50,7 +50,7 @@ p > code {
 
 a {
     text-decoration: none;
-    color: #428BCA;
+    color: #a8390f;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,6 +132,6 @@ h6 {
     font-size: 1.6rem;
 }
 
-.date {
+.date, .readingtime {
     color: gray;
 }
