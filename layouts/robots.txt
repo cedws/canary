@@ -1,6 +1,6 @@
 {{- if not ( .Site.Params.SEO.Index | default false ) -}}
 User-agent: * 
-{{- range .Site.RegularPages }}
+{{- range .Pages }}
 Disallow: {{ .RelPermalink }}
 Noindex: {{ .RelPermalink }}
 {{- end }}

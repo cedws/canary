@@ -1,0 +1,19 @@
+baseURL = 'https://cedwards.xyz/'
+languageCode = 'en-GB'
+title = "Connor's Blog"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[params.links.github]
+  href = "https://github.com/cedws"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4

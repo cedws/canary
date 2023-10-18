@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.Params.Lang }}">
-    {{ partialCached "head.html" . }}
-    <body>
-        <div class="container">
-            {{ partialCached "header.html" . }}
-            <div class="content">
-                <div class="content__title">
-                    <div class="title">{{ .Title | default "Untitled" | title }}</div>
-                    <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
-                </div>
-                {{ .Content }}
-            </div>
-            {{ partialCached "footer.html" . }}
-        </div>
-    </body>
-</html>
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+  {{ .Content }}
+{{ end }}

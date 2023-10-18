@@ -1,0 +1,84 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  margin: 1rem;
+  overflow-y: scroll;
+  max-width: 768px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1.0rem;
+}
+
+a {
+  color: #A8390F;
+  text-decoration: none;
+}
+
+time {
+  color: gray;
+}
+
+main {
+  max-width: 768px; 
+}
+
+pre {
+  padding: 10px;
+  overflow-x: auto;
+}
+
+code {
+  /* https://github.com/adityatelange/hugo-PaperMod/issues/828#issuecomment-1171994855 */
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.header-links img {
+  padding: 0 10px 0 10px;
+}
