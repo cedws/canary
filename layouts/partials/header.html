@@ -1,11 +1,9 @@
-<div class="header"><a href="/">{{ site.Title }}</a></div>
 <div class="header">
   <a href="/">{{ site.Title }}</a>
 </div>
 <div class="header-links">
   {{ range $key, $val := .Site.Params.Links }}
   <a href="{{ .href }}" target="_blank" rel="noopener noreferrer">
-  <img class="icon" src="/img/icons/{{ $key }}.svg" width="30" height="30">
   {{- with resources.Get (printf "img/icons/%s.svg" $key) }}
   <img class="icon" src="{{ .RelPermalink }}" width="30" height="30">
   {{- end }}
@@ -13,7 +11,6 @@
   {{ end }}
   {{ if .Site.RSSLink }}
   <a href="{{ .Site.RSSLink }}" target="noopener noreferrer">
-  <img class="icon" src="/img/icons/rss.svg" width="30" height="30">
   {{- with resources.Get "img/icons/rss.svg" }}
   <img class="icon" src="{{ .RelPermalink }}" width="30" height="30">
   {{- end }}
