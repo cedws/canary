@@ -10,4 +10,5 @@
 {{- end }}
 <link rel="icon" href="data:,">
 <title>{{ site.Title | default "Untitled Site" | title }}</title>
+{{ partialCached "head/font.html" . }}
 {{ partialCached "head/css.html" . }}
