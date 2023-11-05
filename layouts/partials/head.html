@@ -9,6 +9,9 @@
 <meta name="description" content="{{ .Site.Params.SEO.Description }}">
 {{- end }}
 <link rel="icon" href="data:,">
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
 <title>{{ site.Title | default "Untitled Site" | title }}</title>
 {{ partialCached "head/font.html" . }}
 {{ partialCached "head/css.html" . }}

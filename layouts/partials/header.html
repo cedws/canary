@@ -9,8 +9,10 @@
   {{- end }}
   </a>
   {{ end }}
-  {{ with .OutputFormats.Get "rss" -}}
-  <a href="{{ .Permalink }}" target="noopener noreferrer">
+  {{/* with .OutputFormats.Get "rss" -*/}}
+  {{/* Why does this only work on the homepage? Hugo seems to be broken again and I'm not wasting more time on this */}}
+  {{ if .Site.RSSLink }}
+  <a href="{{ .Site.RSSLink }}" target="noopener noreferrer">
   {{- with resources.Get "img/icons/rss.svg" }}
     <img class="icon" src="{{ .Permalink }}" width="30" height="30">
   {{- end }}
