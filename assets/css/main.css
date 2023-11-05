@@ -80,5 +80,9 @@ code {
 }
 
 .header-links img {
-  padding: 0 5px 0 5px;
+  padding: 0 2.5px 0 2.5px;
+}
+
+.header-links {
+  line-height: 0;
 }

@@ -5,14 +5,14 @@
   {{ range $key, $val := .Site.Params.Links }}
   <a href="{{ .href }}" target="_blank" rel="noopener noreferrer">
   {{- with resources.Get (printf "img/icons/%s.svg" $key) }}
-  <img class="icon" src="{{ .RelPermalink }}" width="30" height="30">
+    <img class="icon" src="{{ .RelPermalink }}" width="30" height="30">
   {{- end }}
   </a>
   {{ end }}
-  {{ if .Site.RSSLink }}
-  <a href="{{ .Site.RSSLink }}" target="noopener noreferrer">
+  {{ with .OutputFormats.Get "rss" -}}
+  <a href="{{ .Permalink }}" target="noopener noreferrer">
   {{- with resources.Get "img/icons/rss.svg" }}
-  <img class="icon" src="{{ .RelPermalink }}" width="30" height="30">
+    <img class="icon" src="{{ .Permalink }}" width="30" height="30">
   {{- end }}
   </a>
   {{ end }}
