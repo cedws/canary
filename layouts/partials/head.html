@@ -5,8 +5,19 @@
 <meta name="robots" content="noindex,nofollow">
 {{- end }}
 <meta name="referrer" content="no-referrer">
-{{- if .Site.Params.SEO.Description }}
-<meta name="description" content="{{ .Site.Params.SEO.Description }}">
+{{- with .Site.Params.SEO.Author }}
+<meta name="author" content="{{ . }}">
+{{- end }}
+{{- $description := "" }}
+{{- if .IsPage }}
+  {{- $description = .Description | default .Summary }}
+{{- else }}
+  {{- $description = .Site.Params.SEO.Description }}
+{{- end }}
+{{- with $description }}
+{{- $clean := . | plainify | chomp }}
+<meta name="description" content="{{ $clean }}">
+<meta property="og:description" content="{{ $clean }}">
 {{- end }}
 <link rel="icon" href="data:,">
 {{ with .OutputFormats.Get "rss" -}}
